@@ -77,5 +77,5 @@ endif
 
 MW_AUDIO_LIB ?= -L$(MW_DIR)/lib -ldl -lcvi_audio -lcvi_vqe -lae -lcvi_VoiceEngine -lcvi_RES1 -L/$(MW_DIR)/lib/3rd -ltinyalsa
 
-AISDK_DIR ?= $(PWD)/../cviai
+AISDK_DIR ?= $(PWD)/../tdl_sdk
 AISDK_INC ?= -I$(AISDK_DIR)/include
