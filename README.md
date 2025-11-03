@@ -15,3 +15,8 @@
 ## live555 prebuilt ##
 1. download prebuit live555
    - ftp://10.58.65.3/sw_rls/cv1835/third_party/latest/live555.tar.gz
+
+# License
+
+Project license: BSD 3-Clause (applies to code developed by Sophgo Technologies Inc.)
+See LICENSE at repository root.
