@@ -385,14 +385,11 @@ int get_pq_parameter(int pipe, PQ_PARAMETER_S *p_pq_param)
 	p_pq_param->awb_rgain = awb_info.u16Rgain;
 	p_pq_param->awb_ggain = awb_info.u16Grgain;
 
-	return 0;
-}
+	ret = CVI_ISP_QueryInnerStateInfo(pipe, &p_pq_param->stInnerStateInfo);
 
-void CLASS_FREE(cvtdl_class_meta_t *cls_meta)
-{
-	for (int i = 0; i < 5; i++) {
-		cls_meta->cls[i] = 0;
-		cls_meta->score[i] = 0.0;
-	}
+	if (ret != 0)
+		return -1;
+
+	return 0;
 }
 
